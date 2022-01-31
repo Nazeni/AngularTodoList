@@ -1,8 +1,8 @@
 import { Component, OnInit, Output } from '@angular/core';
-import { IWithIdentity } from './indentity.model';  
-import { User } from '../../classes/user.model';
-import { Todo } from '../../classes/todo.model'; 
-import { MyList } from '../../classes/myList.model';
+import { IWithIdentity } from '../../models/indentity.model';  
+import { User } from '../../models/user.model';
+import { Todo } from '../../models/todo.model'; 
+import { MyList } from '../../models/myList.model';
 
 @Component({
   selector: 'app-users',
@@ -24,6 +24,7 @@ export class UsersComponent implements OnInit {
       id: 1,
       name: "User 1",
       todoList: new MyList(),
+      showTodos: false
     });
     
     this.user1 = this.usersList.findById(1);
@@ -56,6 +57,7 @@ export class UsersComponent implements OnInit {
       id: 2,
       name: "User 2",
       todoList: new MyList(),
+      showTodos: false
     });
     
     this.user2 = this.usersList.findById(2);
@@ -82,14 +84,12 @@ export class UsersComponent implements OnInit {
       id: 3,
       name: "User 3",
       todoList: new MyList(),
+      showTodos: false
     });
-    
-    
   }
 
   ngOnInit(): void {
       console.log("USERS1:", this.user1, "USERS1 TODOLIST:", this.user1?.todoList  )
   }
-
 }
   

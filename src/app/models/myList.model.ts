@@ -1,4 +1,4 @@
-import { IWithIdentity } from "../pages/users/indentity.model";
+import { IWithIdentity } from "./indentity.model";
 export class MyList<T extends IWithIdentity> {
       // best option - use Map
       values: T[];

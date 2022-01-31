@@ -7,6 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { UsersComponent } from './pages/users/users.component';
 import { TodoListComponent } from './pages/todo-list/todo-list.component';
 import { HeaderComponent } from './pages/header/header.component';
+import { UserCardComponent } from './pages/users/user-card/user-card.component';
+import { TodoCardComponent } from './pages/todo-list/todo-card/todo-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HeaderComponent } from './pages/header/header.component';
     HomeComponent,
     UsersComponent,
     TodoListComponent,
-    HeaderComponent
+    HeaderComponent,
+    UserCardComponent,
+    TodoCardComponent
   ],
   imports: [
     BrowserModule,

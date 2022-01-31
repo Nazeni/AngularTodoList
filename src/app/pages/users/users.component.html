@@ -1,14 +1,3 @@
-<h1>Users</h1>
+<h2>Users</h2>
 
-<div class="users" *ngFor="let user of usersList.values" (click)="this.showTodos= !this.showTodos">
-     <p>{{user.id}}- {{user.name}}, "Total todo items:" {{user.todoList.values.length}}</p> 
-
-     <div class="todos-container" *ngIf="showTodos">
-            <h2>Todo List</h2>
-            <span *ngIf="this.user.todoList.values.length === 0">No items</span>
-           
-            <div class="todos" *ngFor="let todo of user.todoList.values">
-                  <p>{{todo.id}}-{{todo.title}}</p>
-            </div>
-     </div>
-</div>
+<app-user-card *ngFor="let user of usersList.values" [user]='user'></app-user-card>

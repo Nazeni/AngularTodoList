@@ -1,0 +1,16 @@
+.user-card{
+    max-width: 80%;
+    margin: 0 auto;
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+
+    h3, span{
+        text-align: center;
+    }
+    span{
+        display: block;
+    }
+}

@@ -1,2 +1,3 @@
+<h2>Todo List <button (click)="resetTodos()">Reset</button></h2>
 
-<p>todo list</p>
+<app-todo-card *ngFor="let todo of todos" [todo]= "todo"></app-todo-card>
