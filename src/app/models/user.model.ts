@@ -5,9 +5,11 @@ import { Todo } from "./todo.model";
 export class User implements IWithIdentity {
       constructor(
         public id: number,
-        public name: string,
-        public todoList: MyList<Todo>,
-        public showTodos: boolean
+        public firstName: string,
+        public lastName: string,
+        public email: any,
+        public password: any,
+        public todoList: MyList<Todo>
       ) {
       }
     }

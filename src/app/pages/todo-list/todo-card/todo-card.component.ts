@@ -9,7 +9,7 @@ import { User } from 'src/app/models/user.model';
 })
 export class TodoCardComponent implements OnInit {
   @Input()  todo: Todo | null = null;
-  @Input() user: User | null = null;
+  
   constructor() { }
 
   ngOnInit(): void {}

@@ -1,5 +1,6 @@
 import { IWithIdentity } from "./indentity.model";
 export class MyList<T extends IWithIdentity> {
+
       // best option - use Map
       values: T[];
     
@@ -15,6 +16,5 @@ export class MyList<T extends IWithIdentity> {
       public findById(id: number): T | null {
         return this.values.find((item) => item.id === id) || null;
       }
-  
     }
     

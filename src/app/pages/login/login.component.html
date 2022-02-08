@@ -1,0 +1,16 @@
+<form #loginForm="ngForm" (ngSubmit)="OnSubmit(loginForm)">
+    <h2>Login</h2>
+    <div>
+        <input type="email" name="email" placeholder="Email" [(ngModel)]="login.email" required pattern="[^ @]*@[^ @]*">
+    </div>
+    <div>
+        <input type="password" name="password" minlength="6" placeholder="Password" [(ngModel)]="login.password" required>
+    </div>
+    <div class="enter">
+        <button class="button" type="submit" [disabled]="!loginForm.valid">Login</button>
+        <span class="register"><a routerLink="/register">Register</a></span>
+    </div>
+</form>
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">  
+    <p style="color: white">Please Wait. </p>  
+</ngx-spinner> 
